@@ -64,7 +64,7 @@ class GroundScheduleViewController: UIViewController,UITableViewDataSource,UITab
     func requestdata()
     {
         let routeId = groundRouteId!
-        var str = "http://172.50.180.239/JourneyHelper-Web/findRouteScheduleList?routeId=\(routeId)"
+        var str = "http://120.27.34.200/JourneyHelper-Web/findRouteScheduleList?routeId=\(routeId)"
         print(str)
         str =  str.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
         let URL =  NSURL(string:str)!

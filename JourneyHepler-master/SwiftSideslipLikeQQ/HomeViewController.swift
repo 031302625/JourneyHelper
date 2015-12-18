@@ -142,7 +142,8 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         return cell
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int
+    {
         return 1
     }
     

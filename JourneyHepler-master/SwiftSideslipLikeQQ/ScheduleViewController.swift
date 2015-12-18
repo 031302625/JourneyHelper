@@ -102,6 +102,9 @@ class ScheduleViewController: UIViewController,UITableViewDataSource,UITableView
         }
         
     }
+    override func viewWillDisappear(animated: Bool) {
+        SVProgressHUD.dismiss()
+    }
     /*
     // MARK: - Navigation
 

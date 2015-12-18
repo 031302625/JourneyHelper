@@ -113,6 +113,7 @@ class ViewController: UIViewController
                         self.userDefaults.setBool(true, forKey: "Log")
                         self.userDefaults.setObject(userId, forKey: "userId")
                         print("数据监测userId\(userId)")
+//                        self.userIdFlag = userId as? Int
                       
 //                        let URL = NSURL(string: "\(hostString)/findCreatedRoutes?userId=\(userId)")!
 //                        print(URL)
@@ -335,6 +336,33 @@ class ViewController: UIViewController
         presentPopinController(rightView, animated: true, completion: nil)
         
     }
+   //        let hostString = host!
+//        let userid = self.userIdFlag!
+//        let URL = NSURL(string: "\(hostString)/findUserNotification?userId=\(userid)")!
+//        print(URL)
+//        Alamofire.request(.GET, URL)
+//            .responseJSON
+//            { response in
+//                self.data = response.result.value as? NSDictionary
+//                if(response.result.isSuccess)
+//                {
+//                    let status = self.data!["status"] as? Int
+//                    if(status == 301)
+//                    {
+//                     
+//                        
+//                    }else if(status == 302)
+//                    {
+//                        SVProgressHUD.showErrorWithStatus("刷新失败")
+//                    }
+//                    
+//                    
+//                }else if(response.result.isFailure)
+//                {
+//                    SVProgressHUD.showErrorWithStatus("刷新失败")
+//                }
+//        }
+//    }
     
-}
 
+}
